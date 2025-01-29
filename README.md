@@ -8,6 +8,16 @@ This project is a piece of c code that when compiled can generate an sql databas
 
 
 ## Usage/Examples
+
+
+For linux you should install the ssl, crypto and sqlite3 packages on debian with apt
+
+```bash
+sudo apt install libssl-dev libcrypto-dev sqlite3 -y
+```
+
+
+
 Clone the project
 
 ```bash
@@ -23,7 +33,7 @@ Go to the project directory
 Compile the file 
 
 ```bash
-  gcc main.c -o output
+  gcc main.c -o output -lssl -lcrypto -lsqlite3
 ```
 
 Execute the file
