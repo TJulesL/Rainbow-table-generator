@@ -38,5 +38,5 @@ Compile the file
 
 Execute the file
 ```bash
-  ./output
+  ./output <wordlist_file>
 ```
